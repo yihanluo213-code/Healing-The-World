@@ -73,17 +73,7 @@ const translations = {
         'time5': 'Gastown Exhibition',
 
         'form-title': 'Submit Your Artwork (Digital Registration)',
-        'form-sub': 'Please fill out the form below to submit your digital artwork for review.',
-        'form-name': 'Artist Name',
-        'form-art-title': 'Artwork Title',
-        'form-medium': 'Medium',
-        'form-size': 'Size',
-        'form-year': 'Year Created',
-        'form-price': 'Selling Price ($)',
-        'form-file': 'Upload Artwork Image (JPG/PNG, Min 300dpi)',
-        'form-agree': 'I have read and agree to the requirements and disclaimer.',
-        'form-submit': 'Submit Registration',
-        'form-success': 'Success! Your registration has been received locally. (This is a frontend demonstration).'
+        'form-sub': 'Please fill out the form below to submit your digital artwork for review.'
     },
     zh: {
         'nav-logo': '世界和平艺术展 2026',
@@ -159,17 +149,7 @@ const translations = {
         'time5': 'Gastown 展览',
 
         'form-title': '提交作品（电子版登记）',
-        'form-sub': '请填写以下表格，提交您的数字艺术作品进行评审。',
-        'form-name': '作者姓名',
-        'form-art-title': '作品标题',
-        'form-medium': '材料 (如：布面油画)',
-        'form-size': '尺寸 (如：24x30 英寸)',
-        'form-year': '创作年份',
-        'form-price': '作品价格 ($)',
-        'form-file': '上传作品图片 (JPG/PNG, 至少 300dpi)',
-        'form-agree': '我已阅读并同意上述要求与免责声明。',
-        'form-submit': '提交登记',
-        'form-success': '提交成功！您的信息已在本地记录（前端演示）。'
+        'form-sub': '请填写以下表格，提交您的数字艺术作品进行评审。'
     }
 };
 
@@ -208,34 +188,6 @@ const observer = new IntersectionObserver((entries, observer) => {
 
 document.querySelectorAll('.fade-in').forEach(section => {
     observer.observe(section);
-});
-
-// Form Submission Mock
-document.getElementById('artwork-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    // In a real app, we would use FormData and fetch() to send this to a backend.
-    // For this mock, we just show a success message.
-    
-    const submitBtn = this.querySelector('button[type="submit"]');
-    const msgDiv = document.getElementById('form-message');
-    
-    submitBtn.disabled = true;
-    submitBtn.textContent = currentLang === 'en' ? 'Submitting...' : '提交中...';
-    
-    setTimeout(() => {
-        msgDiv.textContent = translations[currentLang]['form-success'];
-        msgDiv.className = 'form-message success';
-        msgDiv.style.display = 'block';
-        
-        this.reset();
-        submitBtn.disabled = false;
-        submitBtn.textContent = translations[currentLang]['form-submit'];
-        
-        setTimeout(() => {
-            msgDiv.style.display = 'none';
-        }, 5000);
-    }, 1500);
 });
 
 // Sticky Navbar Background

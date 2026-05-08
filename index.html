@@ -179,53 +179,37 @@
                     <h2 class="section-title center" data-i18n="form-title">Submit Your Artwork (Digital Registration)</h2>
                     <p class="center mb-large" data-i18n="form-sub">Please fill out the form below to submit your digital artwork for review.</p>
                     
-                    <form id="artwork-form">
-                        <div class="form-grid">
-                            <div class="form-group">
-                                <label for="artistName" data-i18n="form-name">Artist Name</label>
-                                <input type="text" id="artistName" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="artworkTitle" data-i18n="form-art-title">Artwork Title</label>
-                                <input type="text" id="artworkTitle" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="medium" data-i18n="form-medium">Medium</label>
-                                <input type="text" id="medium" placeholder="e.g. Oil on Canvas" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="size" data-i18n="form-size">Size</label>
-                                <input type="text" id="size" placeholder="e.g. 24x30 inches" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="year" data-i18n="form-year">Year Created</label>
-                                <input type="number" id="year" placeholder="2026" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="price" data-i18n="form-price">Selling Price ($)</label>
-                                <input type="text" id="price" placeholder="N/A if not for sale" required>
-                            </div>
-                        </div>
-
-                        <div class="form-group full-width">
-                            <label for="artworkFile" data-i18n="form-file">Upload Artwork Image (JPG/PNG, Min 300dpi)</label>
-                            <div class="file-upload-wrapper">
-                                <input type="file" id="artworkFile" accept=".jpg,.jpeg,.png" required>
-                            </div>
-                        </div>
-
-                        <div class="disclaimer-box">
-                            <h4 data-i18n="sec9-title">Disclaimer</h4>
-                            <p data-i18n="sec9-p1">Artists are responsible for packaging and transportation of their artworks. The organizer will take reasonable care of artworks during the exhibition but is not responsible for damage during transportation.</p>
-                            <label class="checkbox-label">
-                                <input type="checkbox" required>
-                                <span data-i18n="form-agree">I have read and agree to the requirements and disclaimer.</span>
-                            </label>
-                        </div>
-
-                        <button type="submit" class="submit-btn" data-i18n="form-submit">Submit Registration</button>
-                        <div id="form-message" class="form-message hidden"></div>
-                    </form>
+                    <div class="jotform-wrapper">
+                        <iframe
+                            id="JotFormIFrame-261136974156058"
+                            title="World Peace Art Exhibition Registration"
+                            onload="window.parent.scrollTo(0,0)"
+                            allowtransparency="true"
+                            allowfullscreen="true"
+                            allow="geolocation; microphone; camera"
+                            src="https://form.jotform.com/261136974156058"
+                            frameborder="0"
+                            style="min-width:100%; max-width:100%; height:800px; border:none;"
+                            scrolling="no"
+                        >
+                        </iframe>
+                        <script type="text/javascript">
+                            var ifr = document.getElementById("JotFormIFrame-261136974156058");
+                            if (ifr) {
+                                var src = ifr.src;
+                                var iframeParams = [];
+                                if (window.location.href && window.location.href.indexOf("?") > -1) {
+                                    iframeParams = window.location.href.split("?")[1].split("&");
+                                }
+                                if (src && src.indexOf("?") > -1) {
+                                    src += "&" + iframeParams.join('&');
+                                } else {
+                                    src += "?" + iframeParams.join('&');
+                                }
+                                ifr.src = src;
+                            }
+                        </script>
+                    </div>
                 </div>
             </div>
         </section>
