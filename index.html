@@ -42,7 +42,7 @@
                 <div class="gallery-grid">
                     <!-- Artwork Item -->
                     <div class="gallery-card" onclick="openModal('modal-1')">
-                        <div class="gallery-img placeholder-1"></div>
+                        <div class="gallery-img" style="background-image: url('assets/featured/short_quote_artist_1.jpg');"></div>
                         <div class="gallery-info">
                             <h3>Artwork Title 1</h3>
                             <p class="artist-name">Artist Name</p>
@@ -50,7 +50,7 @@
                     </div>
                     <!-- Artwork Item -->
                     <div class="gallery-card" onclick="openModal('modal-2')">
-                        <div class="gallery-img placeholder-2"></div>
+                        <div class="gallery-img" style="background-image: url('assets/featured/short_quote_artist_2.jpg');"></div>
                         <div class="gallery-info">
                             <h3>Artwork Title 2</h3>
                             <p class="artist-name">Artist Name</p>
@@ -71,7 +71,7 @@
                 <div class="gallery-grid">
                     <!-- Professional Artwork Item -->
                     <div class="gallery-card featured" onclick="openModal('modal-pro-1')">
-                        <div class="gallery-img placeholder-1"></div>
+                        <div class="gallery-img" style="background-image: url('assets/featured/voices_from_the_exhibition.jpg');"></div>
                         <div class="gallery-info">
                             <h3>Professional Title 1</h3>
                             <p class="artist-name">Pro Artist Name</p>
@@ -82,12 +82,51 @@
             </div>
         </section>
 
-        <section class="section glass-section fade-in">
-            <div class="container center-header">
-                <h2 class="section-title" data-i18n="sub-title">Be Part of the Gallery</h2>
-                <p data-i18n="sub-desc1">This exhibition continues to grow through new voices and contributions.</p>
-                <p class="mb-large" data-i18n="sub-desc2">Are you a student, artist, or community member? Interested in submitting work or participating in future exhibitions?</p>
-                <a href="https://form.jotform.com/261136974156058" target="_blank" class="cta-btn" data-i18n="sub-btn">Submit Your Work</a>
+        <section class="section fade-in">
+            <div class="container">
+                <div class="center-header">
+                    <h2 class="section-title" data-i18n="preview-title">Exhibition Preview</h2>
+                    <h3 data-i18n="preview-subtitle">A glimpse inside the physical gallery space</h3>
+                    <p data-i18n="preview-desc">Explore the serene gallery environment where these beautiful works are presented. The exhibition invites visitors into a peaceful space designed for reflection, visual excellence, and community connection.</p>
+                </div>
+
+                <div class="gallery-grid">
+                    <div class="gallery-card" style="cursor: default;">
+                        <div class="gallery-img" style="background-image: url('assets/preview/white_gallery_interior.jpg');"></div>
+                        <div class="gallery-info">
+                            <h3 data-i18n="preview-img1-title">Gallery Hall</h3>
+                            <p class="artist-name" data-i18n="preview-img1-desc">Serene white walls showcasing emerging artworks</p>
+                        </div>
+                    </div>
+                    <div class="gallery-card" style="cursor: default;">
+                        <div class="gallery-img" style="background-image: url('assets/preview/people_in_exhibition.jpg');"></div>
+                        <div class="gallery-info">
+                            <h3 data-i18n="preview-img2-title">Shared Connection</h3>
+                            <p class="artist-name" data-i18n="preview-img2-desc">Visitors reflecting and engaging with the pieces</p>
+                        </div>
+                    </div>
+                    <div class="gallery-card" style="cursor: default;">
+                        <div class="gallery-img" style="background-image: url('assets/preview/modern_art_gallery_space.jpg');"></div>
+                        <div class="gallery-info">
+                            <h3 data-i18n="preview-img3-title">Creative Space</h3>
+                            <p class="artist-name" data-i18n="preview-img3-desc">A modern art venue fostering visual dialogue</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section fade-in bg-light">
+            <div class="container two-col">
+                <div class="col">
+                    <h2 class="section-title" data-i18n="sub-title">Be Part of the Gallery</h2>
+                    <p data-i18n="sub-desc1">This exhibition continues to grow through new voices and contributions.</p>
+                    <p class="mb-large" data-i18n="sub-desc2">Are you a student, artist, or community member? Interested in submitting work or participating in future exhibitions?</p>
+                    <a href="https://form.jotform.com/261136974156058" target="_blank" class="cta-btn" data-i18n="sub-btn">Submit Your Work</a>
+                </div>
+                <div class="col">
+                    <div style="background-image: url('assets/cta/male_creating_art.jpg'); background-size: cover; background-position: center; height: 400px; border-radius: var(--border-radius); box-shadow: 0 10px 30px rgba(0,0,0,0.1);"></div>
+                </div>
             </div>
         </section>
     </main>
@@ -106,7 +145,7 @@
         <div class="modal-content">
             <span class="close-modal">&times;</span>
             <div class="modal-grid">
-                <div class="modal-img placeholder-1"></div>
+                <div class="modal-img" style="background-image: url('assets/featured/short_quote_artist_1.jpg');"></div>
                 <div class="modal-info">
                     <h2>Artwork Title 1</h2>
                     <h3>Artist Name</h3>
@@ -123,7 +162,7 @@
         <div class="modal-content">
             <span class="close-modal">&times;</span>
             <div class="modal-grid">
-                <div class="modal-img placeholder-2"></div>
+                <div class="modal-img" style="background-image: url('assets/featured/short_quote_artist_2.jpg');"></div>
                 <div class="modal-info">
                     <h2>Artwork Title 2</h2>
                     <h3>Artist Name</h3>
@@ -138,7 +177,7 @@
         <div class="modal-content">
             <span class="close-modal">&times;</span>
             <div class="modal-grid">
-                <div class="modal-img placeholder-1"></div>
+                <div class="modal-img" style="background-image: url('assets/featured/voices_from_the_exhibition.jpg');"></div>
                 <div class="modal-info">
                     <h2>Professional Title 1</h2>
                     <h3>Pro Artist Name</h3>
