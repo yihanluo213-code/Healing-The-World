@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artists | Healing the World Through Art</title>
+    <meta name="description" content="Artists participating in Healing the World Through Art, including students, community artists, and professional artists.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-content">
+            <div class="logo" data-i18n="nav-logo">Healing the World</div>
+            <div class="nav-controls">
+                <a href="index.html" class="nav-link" data-i18n="nav-home">Home</a>
+                <a href="artists.html" class="nav-link" data-i18n="nav-artists">Artists</a>
+                <a href="exhibition.html" class="nav-link" data-i18n="nav-exhibition">Exhibition Info</a>
+                <a href="call-for-works.html" class="nav-link" data-i18n="nav-call">Call for Works</a>
+                <a href="gallery.html" class="nav-link" data-i18n="nav-gallery">Gallery</a>
+                <a href="about.html" class="nav-link" data-i18n="nav-about">About</a>
+                <a href="support.html" class="nav-link" data-i18n="nav-support">Support</a>
+                <a href="https://form.jotform.com/261136974156058" target="_blank" class="nav-btn" data-i18n="nav-submit">Submit Work</a>
+                <button id="lang-toggle" class="lang-toggle">EN / 中文</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Artists</h1>
+            <p class="hero-subtitle">Each artist responds to the world in their own way, using art to seek healing, connection, and shared understanding.</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="section fade-in">
+            <div class="container">
+                <div class="center-header">
+                    <h2 class="section-title">Artist Directory</h2>
+                    <p>Artist profiles will be added as confirmed participant information becomes available. Until then, this page shows the planned directory structure and participation categories.</p>
+                </div>
+
+                <div class="grid-3">
+                    <div class="card">
+                        <div class="card-img" style="background-image: url('assets/three_columns/young_student_artist.png');"></div>
+                        <h3>Student Artists</h3>
+                        <p>K-12 students exploring identity, emotion, nature, and future possibilities through original artworks.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-img" style="background-image: url('assets/three_columns/local_community_art.jpg');"></div>
+                        <h3>Community Artists</h3>
+                        <p>Local voices bringing cultural background, lived experience, and personal storytelling into the exhibition.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-img" style="background-image: url('assets/three_columns/artist_studio_portrait.jpg');"></div>
+                        <h3>Professional Artists</h3>
+                        <p>Experienced artists guiding and elevating the dialogue through mentorship, craft, and artistic leadership.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section bg-light fade-in">
+            <div class="container two-col">
+                <div class="col">
+                    <h2 class="section-title">Profile Format</h2>
+                    <p>Each artist profile is intended to include the artist's work, name, category, school or affiliation when relevant, and a short 30-50 word introduction.</p>
+                    <ul class="check-list">
+                        <li>Artist name and category</li>
+                        <li>Artwork image or representative work</li>
+                        <li>Grade, school, affiliation, or short biography</li>
+                        <li>Optional contact or social media when approved</li>
+                    </ul>
+                </div>
+                <div class="col requirement-box">
+                    <h2 class="section-title">A-Z Browsing</h2>
+                    <p>As confirmed artists are added, the directory can support alphabetical browsing by first letter of artist name while keeping the current static GitHub Pages setup.</p>
+                    <a href="call-for-works.html" class="cta-btn">Submit Your Work</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container center">
+            <h3 data-i18n="footer-tagline" class="mb-large">Art connects. Community heals. Together, we imagine what’s possible.</h3>
+            <p data-i18n="footer-contact">Contact us:</p>
+            <p data-i18n="footer-email">Email: info@healingtheworld.art</p>
+            <p data-i18n="footer-website">Website: healingtheworld.art</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

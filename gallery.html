@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Healing the World Through Art</title>
+    <meta name="description" content="A living gallery of works from Healing the World Through Art.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-content">
+            <div class="logo" data-i18n="nav-logo">Healing the World</div>
+            <div class="nav-controls">
+                <a href="index.html" class="nav-link" data-i18n="nav-home">Home</a>
+                <a href="artists.html" class="nav-link" data-i18n="nav-artists">Artists</a>
+                <a href="exhibition.html" class="nav-link" data-i18n="nav-exhibition">Exhibition Info</a>
+                <a href="call-for-works.html" class="nav-link" data-i18n="nav-call">Call for Works</a>
+                <a href="gallery.html" class="nav-link" data-i18n="nav-gallery">Gallery</a>
+                <a href="about.html" class="nav-link" data-i18n="nav-about">About</a>
+                <a href="support.html" class="nav-link" data-i18n="nav-support">Support</a>
+                <a href="https://form.jotform.com/261136974156058" target="_blank" class="nav-btn" data-i18n="nav-submit">Submit Work</a>
+                <button id="lang-toggle" class="lang-toggle">EN / 中文</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Gallery</h1>
+            <p class="hero-subtitle">A collective expression of healing, identity, and connection.</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="section fade-in">
+            <div class="container">
+                <p class="center-header highlight-text">This gallery brings together works from students, community members, and professional artists, each offering a perspective on how art helps us understand ourselves and the world around us.</p>
+
+                <div class="center-header">
+                    <h2 class="section-title">Featured This Week</h2>
+                    <p>A rotating selection of newly added or highlighted works from across the exhibition.</p>
+                </div>
+
+                <div class="gallery-grid">
+                    <div class="gallery-card" style="cursor: default;">
+                        <div class="gallery-img" style="background-image: url('assets/featured/short_quote_artist_1.jpg');"></div>
+                        <div class="gallery-info">
+                            <h3>Student Works</h3>
+                            <p class="artist-name">Young voices imagining the future</p>
+                            <p>Confirmed student artworks will be added here with title, artist name, grade or school, and artist statement.</p>
+                        </div>
+                    </div>
+                    <div class="gallery-card" style="cursor: default;">
+                        <div class="gallery-img" style="background-image: url('assets/featured/short_quote_artist_2.jpg');"></div>
+                        <div class="gallery-info">
+                            <h3>Community Works</h3>
+                            <p class="artist-name">Local perspectives and lived experience</p>
+                            <p>Confirmed community artworks will be added here with artist-approved descriptions and biography details.</p>
+                        </div>
+                    </div>
+                    <div class="gallery-card featured" style="cursor: default;">
+                        <div class="gallery-img" style="background-image: url('assets/featured/voices_from_the_exhibition.jpg');"></div>
+                        <div class="gallery-info">
+                            <h3>Professional Works</h3>
+                            <p class="artist-name">Guiding and elevating the dialogue</p>
+                            <p>Confirmed professional artworks will be added here with credentials, medium, and statement details.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section bg-light fade-in">
+            <div class="container">
+                <div class="center-header">
+                    <h2 class="section-title">Explore the Gallery</h2>
+                    <p>As confirmed works are added, this page can expand into student, community, and professional artist sections.</p>
+                </div>
+                <div class="grid-3">
+                    <div class="card"><h3>Students (K-12)</h3><p>Young voices imagining the future through fresh, expressive, and exploratory works.</p></div>
+                    <div class="card"><h3>Community Artists</h3><p>Local perspectives and lived experience shaped by personal stories and cultural backgrounds.</p></div>
+                    <div class="card"><h3>Professional Artists</h3><p>Depth, experience, and artistic leadership that frame the broader dialogue.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section fade-in">
+            <div class="container two-col">
+                <div class="col">
+                    <h2 class="section-title">A Living Gallery</h2>
+                    <p>This is not a static collection. New works are added. New voices are included. New perspectives emerge.</p>
+                    <p>Healing the World Through Art is an ongoing conversation, and this gallery is where it takes shape.</p>
+                </div>
+                <div class="col requirement-box">
+                    <h2 class="section-title">Be Part of the Gallery</h2>
+                    <p>Are you a student, artist, or community member interested in submitting work or participating in future exhibitions?</p>
+                    <a href="call-for-works.html" class="cta-btn">Submit Your Work</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container center">
+            <h3 data-i18n="footer-tagline" class="mb-large">Art connects. Community heals. Together, we imagine what’s possible.</h3>
+            <p data-i18n="footer-contact">Contact us:</p>
+            <p data-i18n="footer-email">Email: info@healingtheworld.art</p>
+            <p data-i18n="footer-website">Website: healingtheworld.art</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

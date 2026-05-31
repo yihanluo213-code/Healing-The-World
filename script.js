@@ -1,9 +1,14 @@
 const translations = {
     en: {
         'nav-logo': 'Healing the World',
+        'nav-home': 'Home',
+        'nav-artists': 'Artists',
+        'nav-exhibition': 'Exhibition Info',
+        'nav-call': 'Call for Works',
         'nav-gallery': 'Gallery',
         'nav-about': 'About',
         'nav-support': 'Support',
+        'nav-submit': 'Submit Work',
         
         'hero-title-en': 'Healing the World Through Art',
         'hero-title-cn': '用艺术治愈世界',
@@ -154,9 +159,14 @@ const translations = {
     },
     zh: {
         'nav-logo': '用艺术治愈世界',
+        'nav-home': '首页',
+        'nav-artists': '艺术家',
+        'nav-exhibition': '展览信息',
+        'nav-call': '征集作品',
         'nav-gallery': '画廊',
         'nav-about': '关于项目',
         'nav-support': '支持我们',
+        'nav-submit': '提交作品',
         
         'hero-title-en': 'Healing the World Through Art',
         'hero-title-cn': '用艺术治愈世界',
